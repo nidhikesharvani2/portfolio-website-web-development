@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel ="stylesheet"href="STYLE.css">
+</head>
+<body>
+    <div class="portfolio-container">
+    <ul class="navlist">
+    
+                        <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+             <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+        </ul>
+    <div class ="header-text">
+        <h2> WEB DEVELOPER</h2>
+        <h1> Hi, I'm <span>Nidhi</span><br>Kesharvani From <br>India</h1>
+</div>
+</div>
+<div>
+    <div class="design">
+        <div class="circle">
+            <img src="project.jpeg">
+        </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">  
+            <div class="about-col-1">
+                <img src="ng.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                <p> 
+                         has a openmind and a flair interacting with people From 
+                         diverse backgrounds.a curious and passionate individual,who
+                          is eager to learn and dive deep into the subject matter.
+                </p>
+                <div class="tabtitles">
+                    <p class="tab-links" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">experience</p>
+                    <p class="tab-links"onclick="opentab('education')">education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                      <li><span>Language</span><br>C&C++</li>
+            <li><span> FRONTEND WEB DEVELOPER</span><br>HTML,CSS,JAVASCRIPT</li>
+</ul>
+                </div>
+    <div class="tab-contents" id="experience">
+        <ul>
+        <li><span>2024-current</span><br>Learning at ACCIO</li>
+        <li><span>2024</span><br>Internship in Bharat Intern</li>
+        </ul>
+    </div>          
+<div class="tab-contents" id="Education">
+    <ul>
+        <li><span> 2022</span><br>Burktullah university Institute of Technology</li>
+        <li><span> 2021</span><br>Mp Board 12th</li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+            <img src="portfolio.jpg" >
+            <div class="layer">
+                <h1>Portfolio site</h1>
+                <p>this site is a way to showcase <br>your work and let others know<br> about yourself</p>
+            </div>
+        </div>
+        <div class="work2">
+            <img src="jobb.jpg" >
+            <div class="layer2">
+                <h1>Weather Site</h1>
+                <p>
+                    this site is allow to watch <br>for current temprature and weather.
+                </p>
+
+            </div>
+            </div>
+            <div class="work3">
+                <img src="w..jpg" >
+                <div class="layer3">
+                    <h1>Job site</h1>
+                <p>
+                a site that firms use to inform job<br> searchers about open position.
+                </p>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="row">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>nidhi80@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/ "><i class="fab fa-facebook"></i></a>
+                    <a href=" "><i class="fab fa-twitter-square"></i></a>
+                    <a href=" "><i class="fab fa-instagram"></i></a>
+                    <a href=" "><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2"  >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your Name" required>
+                <input type="email" name="email" placeholder="your email" required>
+                <textarea name="Message" rows="10" placeholder="your Message"></textarea>
+                <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
